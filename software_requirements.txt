@@ -17,3 +17,11 @@ If the file doesn't match these formats, we should throw an InvalidFileFormatExc
 
 The last parameter is either n or t telling us whether to use naive bayes rule or TAN.
 We should do error checking on the command.
+
+Naive Bayes:
+We will create a naive bayes calculation object. This object will create a probability distribution hash
+table (hashtable of hashtables). We will need a method to increment a cell given an attribute, 
+and calculate probilities for each cell. Each cell is a nX2 hash table with {realization value: probability}.
+
+We will also need a method that given a file and a scanner will
+create the naive bayes calculation object.
