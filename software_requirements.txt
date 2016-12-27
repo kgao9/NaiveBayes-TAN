@@ -35,3 +35,21 @@ The final line will be how many examples were actually correct.
 
 Should have a constructor and only three methods:
 calculateProbability, getLine, writeLine.
+
+TAN:
+    This is far harder than naive bayes. 
+    We will create a TAN calculation object.
+    It will need to have a set of states and run Kruskal's or Prim's
+    MST algorithm.
+    That will have its own calculation object. The object's specs are:
+    Given a set of states and  edges, it will return the MST for that graph.
+    We first need to compute and verify the
+    information gains for each edge. Once that is verified, we run Prim's algorithm.
+    After that, we just add our class node and the traditional naive bayes edges.
+    This means the output object calculation will be different...
+    I need to figure out the difference though.
+
+Debugging:
+Each object will have a toString method. We will use that as our debugging tool.
+That is best as we have sample answers and sample graphs - easier verification than
+unit tests.
