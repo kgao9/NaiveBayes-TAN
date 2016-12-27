@@ -1,0 +1,19 @@
+This program implements the naive bayes and TAN algorithm. It will be written in java for now.
+There will be a command line parser where the format of the command is
+
+java bayes <train-set-file> <test-set-file> <n|t>
+
+train-set-file is the training set file.
+test-set-file is the testing set file.
+Both have an ARFF file format.
+This basically means it's in this format:
+The file begins with lines starting with % announcing the data's source.
+These lines our scanner should ignore.
+After %s, there are @relation.
+this is the variable we are testing for. For this software, we will
+assume for simplicity that there is only 1 @relation.
+Finally there are @attributes which are random variables and the values they can realize to.
+If the file doesn't match these formats, we should throw an InvalidFileFormatException.
+
+The last parameter is either n or t telling us whether to use naive bayes rule or TAN.
+We should do error checking on the command.
